@@ -2,16 +2,16 @@
   "name": "abc",
   "author": "Golubev Fedor <gregof@yandex.ru> (http://github.com/gregof)",
   "description": "Misc js helpers",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "dependencies": {},
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {
-    "node": ">=0.4.0 <0.7.0"
+    "node": ">=0.4.0"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/gregof/abc.git"
   },
-  "main"    : "./index.js"
+  "main": "./index.js"
 }
