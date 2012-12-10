@@ -1,5 +1,5 @@
 //in
-async = require('../../lib/async.js');
+var async = require(tc.fixPath('../../lib/async.js'));
 var result = [];
 var arr = [
     function (callback) {
@@ -16,8 +16,9 @@ var arr = [
 async.sequence(
     arr,
     function () {
-        finish(result);
+        tc.out(result);
+        tc.finish();
     }
 )
 //out
-[1,2]
+1,2

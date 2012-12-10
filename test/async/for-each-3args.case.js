@@ -1,5 +1,5 @@
 //in
-async = require('../../lib/async.js');
+var async = require(tc.fixPath('../../lib/async.js'));
 var result = [];
 var arr = [1,2,3];
 async.forEach(
@@ -16,8 +16,9 @@ async.forEach(
         }
     },
     function () {
-        finish(result);
+        tc.out(result);
+        tc.finish();
     }
 )
 //out
-[2,3,1]
+2,3,1
