@@ -1,6 +1,5 @@
 ## abc
 
-### abc.async
 #### abc.async.forEach
 ```javascript
 abc.async(array, action, [callback]);
@@ -75,13 +74,12 @@ function func1 (callback, previousResult) {
 // func2, func3
 ```
 
-###abc.dir
+####abc.dir
 Create dir, if it does not exist.
 ```javascript
 abc.dir(dirPath, callback)
 ```
 
-### abc.file
 #### abc.file.read
 ```javascript
 abc.file.read(filename, callback)
@@ -107,12 +105,12 @@ abc.file.binWrite(filename, data, callback)
 abc.file.binCopy(sourceFileName, destinationFileName, callback)
 ```
 
-### abc.extend
+#### abc.extend
 ```javascript
 abc.extend(origin, patch1 /*, ..., patchN */, recursive)
 ```
 
-### abc.find
+#### abc.find
 Recursive find in dir. Calls fileCallback for each file, and completeCallback at end.
 ```javascript
 abc.find(dirPath, fileCallback, completeCallback, {recursive: true, excludedDirs: ['node_modules']})
@@ -124,7 +122,7 @@ function fileCallback (file, dirPath) {
 }
 ```
 
-### abc.Executer
+#### abc.Executer
 Pool of actions limited by action executed in parallel.
 ```javascript
 var executer = new abc.Executer(30); // No more then 30 actions in parallel.
