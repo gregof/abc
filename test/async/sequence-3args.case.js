@@ -16,9 +16,11 @@ async.sequence(
         }
     },
     function () {
+        tc.out(arr);
         tc.out(result);
         tc.finish();
     }
 )
 //out
+1,2,3
 1,2,3

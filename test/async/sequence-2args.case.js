@@ -5,7 +5,7 @@ var arr = [
     function (callback) {
         setTimeout(function () {
             result.push(1);
-            callback()
+            callback(2)
         }, 200);
     },
     function (callback) {
@@ -15,10 +15,12 @@ var arr = [
 ];
 async.sequence(
     arr,
-    function () {
+    function (autoResults) {
         tc.out(result);
+        tc.out(autoResults);
         tc.finish();
     }
 )
 //out
 1,2
+2,
