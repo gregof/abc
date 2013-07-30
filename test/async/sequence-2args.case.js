@@ -8,7 +8,8 @@ var arr = [
             callback(2)
         }, 200);
     },
-    function (callback) {
+    function (callback, previousResult) {
+        tc.out(previousResult);
         result.push(2);
         callback()
     }
@@ -22,5 +23,6 @@ async.sequence(
     }
 )
 //out
+2
 1,2
 2,
