@@ -2,7 +2,7 @@
   "name": "abc",
   "author": "Golubev Fedor <gregof@yandex.ru> (http://github.com/gregof)",
   "description": "Misc js helpers",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "dependencies": {},
   "devDependencies": {
     "abc": "0.3.x",
