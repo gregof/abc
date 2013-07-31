@@ -8,17 +8,19 @@ async.forEach(
         if (value == 1) {
             setTimeout(function () {
                 result.push(value);
-                callback();
+                callback(value);
             }, 200)
         } else {
             result.push(value);
-            callback();
+            callback(value);
         }
     },
-    function () {
+    function (autoResults) {
         tc.out(result);
+        tc.out(autoResults);
         tc.finish();
     }
 )
 //out
 2,3,1
+1,2,3
