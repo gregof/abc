@@ -2,7 +2,7 @@
 
 #### abc.async.forEach
 ```javascript
-abc.async(array, action, [callback]);
+abc.async(array|object, action, [callback]);
 ```
 ```javascript
 abc.async.forEach(
